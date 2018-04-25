@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fadingEdge="none"
+        android:paddingTop="4dp"
+        android:fillViewport="true"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:id="@+id/search_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/search_container"
+        android:layout_width="@dimen/threefives"
+        android:layout_height="@dimen/threefives"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp" 
+        android:layout_marginRight="8dp">
+
+        <View
+            android:id="@+id/dimen_threefives_holder"
+            android:layout_width="@dimen/threefives"
+            android:layout_height="@dimen/threefives"
+            android:layout_centerInParent="true" />
+
+        <View
+            android:id="@+id/dimen_fiftycent_holder"
+            android:layout_width="@dimen/fiftycent"
+            android:layout_height="@dimen/fiftycent"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/search_search"
+            android:layout_width="@dimen/threefives"
+            android:layout_height="@dimen/threefives"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:longClickable="true"
+            android:src="@drawable/imagebutton_search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/threefives"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="-15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@+id/search_container" >
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:maxWidth="@dimen/ahundred"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black9"
+            android:textColorHint="@color/black9"
+            android:textCursorDrawable="@drawable/cursor_dark"
+            android:background="@color/silver3"
+            android:clickable="true"
+            android:ems="10"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:lines="1"
+            android:padding="10dp"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/search_text_indecator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/search_text"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="-10dp"
+            android:background="@color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

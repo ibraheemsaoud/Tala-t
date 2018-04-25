@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tala\'at</string>
+    <string name="uproject">U|Project</string>
+    <string name="app_id">704233486315749</string>
+    <string name="versionNum">0</string>
+    <string name="desc">Never miss another event</string>
+    <string name="long_desc">discover your area in a new way \n and hangout with friends</string>
+    <string name="guest_mode">try first?</string>
+    <!-- WELCOME -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <!-- SECTIONS -->
+    <string name="family">Family</string>
+    <string name="culture">Culture</string>
+    <string name="concert">Party</string>
+    <string name="charity">Voluntary</string>
+    <string name="sport">Sport</string>
+    <string name="religion">Religion</string>
+    <string name="social">Social</string>
+    <string name="education">Education</string>
+    <string name="other">Other</string>
+    <!-- ERRORS -->
+    <string name="E_no_stream">try choosing more regions and sections so we can find you hangouts</string>
+    <string name="E_internet">no internet connection</string>
+    <string name="E_registeration">registration error, please recheck your fields</string>
+    <string name="E_user_not_found">user not found!</string>
+    <string name="E_username">3->20 letters, with \'_\'</string>
+    <string name="E_username_exists">username already exists, please try another one</string>
+    <string name="E_username_password">sorry, there is a problem with the username, password</string>
+    <string name="E_password">6->50 characters, make it hard :)</string>
+    <string name="E_password_old">retype your old password</string>
+    <string name="E_password_confirm">passwords doesn\'t match!</string>
+    <string name="E_email">double check your email</string>
+    <string name="E_unknown">an unknown problem has occurred, please try again later</string>
+    <string name="E_unknown_uploading">unkown problem occurred, upload faild</string>
+    <string name="E_no_result">we couldn\'t find a result for your search, try using different words</string>
+    <string name="E_no_manager">looks like you didn\'t make any hangouts recently, try one it\'s fun :)</string>
+    <string name="E_fill_one">you need to fill at least a field</string>
+    <string name="E_hangouts">the user haven\'t been anywhere yet</string>
+    <string name="E_facebook">you need facebook application</string>
+    <!-- MANAGER ERRORS-->
+    <string name="E_headline">every hangout needs a headline</string>
+    <string name="E_desc">Ops, are we forgetting something?</string>
+    <string name="E_canceled">action canceled</string>
+    <string name="E_date_format">dd/mm/yyyy (ex: 31/10/2015)</string>
+    <string name="E_date">you should make the hangout at least a day advance</string>
+    <string name="E_time_format">hh:mm (ex: 12:30)</string>
+    <string name="E_time">make it a proper time</string>
+    <string name="E_cost">add more money to make public events, or try group events, they are free</string>
+    <string name="E_cost_hang">add more money to be able to purchase this ticket</string>
+    <string name="E_not_logged">please log in to be able to hang</string>
+    <string name="E_no_backs">sorry you can\'t give back your ticket</string>
+    <string name="E_no_tickets">sorry tickets are sold out :/</string>
+    <!-- USER -->
+    <string name="username">Username</string>
+    <string name="email">email</string>
+    <string name="phone">phone</string>
+    <string name="password">password</string>
+    <string name="password_old">current password</string>
+    <string name="password_confirm">confirm password</string>
+    <string name="north">middle (Homs, Hama and Aleppo)</string>
+    <string name="west">west (Lattakia, Tartous and Edleb)</string>
+    <string name="east">east (Al Raqua, Deir al Zour and Al Hasakah)</string>
+    <string name="south">south (Damascus and southern provinces)</string>
+    <string name="phone_explain">we will only use your phone number to send you notifications about the important events that you are going to miss, you can change your settings anytime.</string>
+    <string name="sections_explain">choose what sections you want to get events about</string>
+    <string name="region_explain">choose what regions you want to get events about</string>
+    <string name="terms">by clicking send you accept the terms of use and user agreement on the website.</string>
+   	<!-- DrawerLayout -->
+   	<string name="home">Home</string>
+   	<string name="upcoming">Upcoming</string>
+   	<string name="hangging">Hangging</string>
+   	<string name="search">Search</string>
+   	<string name="eventManager">Event Manager</string>
+   	<string name="groups">Groups</string>
+   	<string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <!-- MANAGER -->
+    <string name="seats_explaination">*Leave empty for unlimited\n**5% fee applies(see help)</string>
+    <string name="ticket_explaination">*Leave empty for free</string>
+    <!-- Event Template -->
+    <string name="hang">Hang</string>
+    <string name="share">Share</string>
+    <string name="are_hanggnig"> people are hangging</string>
+    <string name="hanggers_0">be the first to hang!</string>
+    <string name="hanggers">hanggers</string>
+    <!-- PROFILE -->
+    <string name="follow">FOLLOW</string>
+    <string name="EDIT">EDIT</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="update_about">Update About</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notifications">Notifications</string>
+    <!-- CONTENT DESC -->
+    <string name="profileImage">profile</string>
+    <!-- LOADER -->
+    <string name="fetching">fetching</string>
+    <string name="pull">pull to get more</string>
+    <string name="release">release to load more</string>
+    <!--  -->
+    <string name="error">Error</string>
+    <string name="done">done</string>
+    <string name="more">MORE</string>
+    <string name="less">LESS</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- SHARING -->
+    <string name="check_out">check out this event:</string>
+    <string name="share_using">share using</string>
+    <string name="event_link">u-talat.asuscomm.com/t/e.php?id=</string>
+</resources>

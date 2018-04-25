@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/concert_0" android:duration="350" />
+    <item android:drawable="@drawable/concert_1" android:duration="350" />
+    <item android:drawable="@drawable/concert_2" android:duration="350" />
+    <item android:drawable="@drawable/concert_3" android:duration="350" />
+    <item android:drawable="@drawable/concert_4" android:duration="350" />
+    <item android:drawable="@drawable/concert_5" android:duration="1050" />
+    <item android:drawable="@drawable/concert_4" android:duration="350" />
+    <item android:drawable="@drawable/concert_3" android:duration="350" />
+    <item android:drawable="@drawable/concert_2" android:duration="350" />
+    <item android:drawable="@drawable/concert_1" android:duration="350" />
+    <item android:drawable="@drawable/concert_0" android:duration="350" />
+</animation-list>

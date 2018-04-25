@@ -1,0 +1,37 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/dorange</item>
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple7</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:textColor">@color/black7</item>
+        <item name="android:textColorHint">@color/black6</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/black7</item>
+
+        <item name="editTextColor">@color/black7</item>
+        <!-- gives an underline for the editText -->
+        <item name="colorControlActivated">@color/dorange</item>
+        <item name="colorControlNormal">@color/black4</item>
+        <item name="colorControlHighlight">@color/dorange</item>
+        <item name="colorSwitchThumbNormal">@color/purple</item>
+    </style>
+    <style name="AppThemeFull" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/dorange</item>
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple7</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:textColor">@color/black7</item>
+        <item name="android:textColorHint">@color/black6</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/black7</item>
+
+        <item name="editTextColor">@color/black7</item>
+        <!-- gives an underline for the editText -->
+        <item name="colorControlActivated">@color/dorange</item>
+        <item name="colorControlNormal">@color/black4</item>
+        <item name="colorControlHighlight">@color/dorange</item>
+        <item name="colorSwitchThumbNormal">@color/purple</item>
+    </style>
+</resources>

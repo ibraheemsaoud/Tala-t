@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="identify your Hangout"
+        android:textColor="@color/purple"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/EM_headline"
+        android:layout_width="match_parent"
+        android:ems="10"
+        android:layout_height="wrap_content"
+        android:hint="headline"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/EM_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="desc"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+
+</LinearLayout>

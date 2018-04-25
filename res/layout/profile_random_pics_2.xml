@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/profile_random_pics"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/silver1"
+              android:padding="2dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/profile_pic_con_1"
+                android:layout_width="@dimen/threefives"
+                android:layout_height="@dimen/threefives"
+                android:padding="4dp"
+
+                android:background="@drawable/border_padding_2_dark">
+
+                <ImageView
+                    android:id="@+id/profile_pic_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sport"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/profile_pic_con_2"
+                android:layout_width="@dimen/threefives"
+                android:layout_height="@dimen/threefives"
+                android:padding="4dp"
+                android:background="@drawable/border_padding_2_dark">
+
+                <ImageView
+                    android:id="@+id/profile_pic_2"
+                    android:layout_width="@dimen/threefives"
+                    android:layout_height="@dimen/threefives"
+                    android:src="@drawable/concert_gif"
+                    android:scaleType="centerCrop"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_pic_con_4"
+            android:layout_width="@dimen/hundredAndHalf"
+            android:layout_height="@dimen/hundredAndHalf"
+            android:padding="4dp"
+            android:background="@drawable/border_padding_2_dark"
+            android:layout_below="@+id/profile_pic_con_1">
+
+            <ImageView
+                android:id="@+id/profile_pic_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dubarah_ad_n_1"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/profile_pic_con_3"
+            android:layout_width="@dimen/hundredAndHalf"
+            android:layout_height="@dimen/hundredAndHalf"
+            android:padding="4dp"
+            android:background="@drawable/border_padding_2_dark"
+            android:layout_toRightOf="@+id/profile_pic_con_2">
+
+            <ImageView
+                android:id="@+id/profile_pic_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dubarah_ad_n_2"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/profile_pic_con_5"
+                android:layout_width="@dimen/threefives"
+                android:layout_height="@dimen/threefives"
+                android:padding="4dp"
+                android:background="@drawable/border_padding_2_dark">
+
+                <ImageView
+                    android:id="@+id/profile_pic_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/education"
+                    android:scaleType="centerCrop"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/profile_pic_con_6"
+                android:layout_width="@dimen/threefives"
+                android:layout_height="@dimen/threefives"
+                android:padding="4dp"
+                android:background="@drawable/border_padding_2_dark"
+                android:layout_below="@+id/profile_pic_con_3"
+                android:layout_toRightOf="@+id/profile_pic_con_5">
+
+                <ImageView
+                    android:id="@+id/profile_pic_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/family"
+                    android:scaleType="centerCrop"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

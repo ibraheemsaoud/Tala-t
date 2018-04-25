@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/profile_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/sy.UProject.talat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/profile_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/profile_picture"
+                        android:layout_width="@dimen/ahundred"
+                        android:layout_height="@dimen/ahundred"
+                        android:clickable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sport"
+                        android:background="@drawable/button_transparent_rounded"/>
+
+                    <TextView
+                        android:id="@+id/profile_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="@dimen/ahundred"
+                        android:textSize="26sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="Ibraheem Saoud"
+                        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+                    <Button
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/profile_follow"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:textSize="15sp"
+                        android:background="@color/white"
+                        android:textColor="@color/red9"
+                        android:text="@string/follow"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:navigationIcon="@drawable/ic_drawer"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_indecator"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red6"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:minWidth="225dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+
+                    <TextView
+                        android:id="@+id/profile_hangs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@drawable/text_white_black"
+                        android:text="    "
+                        android:clickable="true"
+                        android:textSize="25sp"
+                        android:gravity="center_vertical"
+                        android:drawableRight="@drawable/imagebutton_hangging"/>
+
+                    <TextView
+                        android:id="@+id/profile_hangouts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@drawable/text_white_black"
+                        android:text="    "
+                        android:clickable="true"
+                        android:textSize="25sp"
+                        android:gravity="center_vertical|right"
+                        android:drawableRight="@drawable/imagebutton_event"/>
+
+                    <TextView
+                        android:id="@+id/profile_followers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@drawable/text_white_black"
+                        android:text="    "
+                        android:clickable="true"
+                        android:textSize="25sp"
+                        android:gravity="center_vertical|right"
+                        android:drawableRight="@drawable/imagebutton_user_template"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_about2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:maxLines="3"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/profile_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/profile_more"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:text="@string/more"
+                    android:layout_gravity="bottom"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginRight="6dp"
+                    android:textColor="@color/white"
+                    android:background="@color/red7"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/profile_events_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/silver1">
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

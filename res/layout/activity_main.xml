@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/master_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimaryDark"
+                android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:clipToPadding="false"
+            android:paddingBottom="15dp"
+            android:scrollbars="none"/>
+    </android.support.v4.widget.DrawerLayout>
+
+    <View
+        android:id="@+id/temp_action_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/toolbar"/>
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"/>
+
+    <Button
+        android:id="@+id/offline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="offline"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/temp2_action_button"
+        android:layout_width="@dimen/threefives"
+        android:layout_height="@dimen/threefives"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:longClickable="true"
+        android:background="@drawable/imagebutton_logo"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_action_logo_walk_0"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_action_logo_walk_1"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_action_logo_walk_2"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/temp_action_button"
+        android:layout_width="@dimen/threefives"
+        android:layout_height="@dimen/threefives"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:background="@drawable/imagebutton_logo"/>
+
+    <ImageView
+        android:id="@+id/temp_profile_pic"
+        android:layout_width="@dimen/ahundred"
+        android:layout_height="@dimen/ahundred"
+        android:visibility="invisible"/>
+
+    <View
+        android:id="@+id/light_notification_back2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/light_notifications2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+        android:background="#d0ff5722"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/light_notifications_text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/silver1"
+            android:text="No internet connection"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <Button
+            android:id="@+id/light_notifications_dismiss2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:text="dismiss"
+            android:textColor="@drawable/text_white_dorange"
+            android:background="@drawable/ic_transparent"/>
+    </LinearLayout>
+</RelativeLayout>

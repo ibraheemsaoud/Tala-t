@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:gravity="center"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/ET_feature_op1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/blue"
+        android:text="Basic (100 S.P.)"/>
+
+    <Button
+        android:id="@+id/ET_feature_op2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:text="Pro (250 S.P.)"/>
+
+    <Button
+        android:id="@+id/ET_feature_op3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:text="Ultimate (500 S.P.)"/>
+
+</LinearLayout>

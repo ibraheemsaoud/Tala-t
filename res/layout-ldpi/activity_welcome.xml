@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/welcome_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:background="?attr/colorPrimary">
+
+            <TextView
+                android:id="@+id/welcome_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcome_logo"
+                android:gravity="center"
+                android:text="@string/desc"
+                android:textColor="@color/purple1"
+                android:typeface="sans"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/welcome_logo"
+                android:layout_alignBottom="@+id/welcome_logo"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/uproject"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:typeface="serif"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/long_desc"
+            android:textColor="@color/black7"
+            android:typeface="sans"
+            android:textSize="17sp"/>
+
+        <Button
+            android:id="@+id/welcome_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_fancy_blue"
+            android:minHeight="40dp"
+            android:text="@string/guest_mode"
+            android:textAllCaps="true"
+            android:textColor="@drawable/text_blue_black"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="8dp">
+
+            <Button
+                android:id="@+id/welcome_register"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:background="@drawable/button_transparent_light_ronded"
+                android:minHeight="40dp"
+                android:textAllCaps="true"
+                android:text="@string/register"
+                android:textColor="@color/dorange7"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:id="@+id/welcome_login"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:background="@drawable/button_transparent_light_ronded"
+                android:minHeight="40dp"
+                android:textAllCaps="true"
+                android:text="@string/login"
+                android:textColor="@color/dorange7"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:gravity="center"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ET_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:text="21/12/2013"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/blue5"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ET_ends_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ends on  "
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/black8"/>
+
+        <TextView
+            android:id="@+id/ET_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21/12/2013"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/blue5"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/ET_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/dorange5"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  till  "
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/black8"/>
+
+        <TextView
+            android:id="@+id/ET_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:00"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/dorange5"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

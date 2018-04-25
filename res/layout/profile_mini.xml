@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_mini_con"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/profile_mini_pic"
+            android:layout_width="@dimen/fiftycent"
+            android:layout_height="@dimen/fiftycent"
+            android:src="@color/red"
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profile_mini_username"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/silver7"
+                android:text="Ibraheem Saoud"
+                android:textSize="22sp"
+                android:lines="1"/>
+
+            <Button
+                android:id="@+id/profile_mini_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@color/dorange"
+                android:text="@string/follow"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="right|center_vertical"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:background="@drawable/button_transparent_light_ronded" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/profile_mini_indecator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/silver"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+</LinearLayout>

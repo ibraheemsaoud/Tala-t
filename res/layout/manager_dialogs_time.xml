@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="when will it happen"
+        android:textColor="@color/purple"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/EM_date_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="01-01-2015"
+                android:inputType="date"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:animateLayoutChanges="true"
+                android:id="@+id/manager_extended_date_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black3"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:gravity="left"
+                    android:text="ends on"/>
+
+                <EditText
+                    android:id="@+id/EM_date_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="01-01-2015"
+                    android:inputType="date"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/manager_extender_date_end"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:minWidth="90dp"
+            android:text="@string/more"
+            android:textColor="@drawable/text_dorange"
+            android:textStyle="bold"
+            android:background="@drawable/button_default_dorange"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EM_time_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="12:00"
+            android:inputType="time"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" till "
+            android:gravity="center"
+            android:textColor="@color/purple4"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/EM_time_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="12:00"
+            android:inputType="time"/>
+    </LinearLayout>
+</LinearLayout>

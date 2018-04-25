@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple"
+    android:gravity="center_vertical"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/notification_header_pic"
+        android:layout_width="@dimen/fiftycent"
+        android:layout_height="@dimen/fiftycent"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:src="@drawable/ic_user_template"/>
+
+    <TextView
+        android:id="@+id/notification_header_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black1"
+        android:typeface="monospace"/>
+
+
+    <ImageView
+        android:id="@+id/notification_header_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_notifications_light_4"
+        android:tint="@color/white"/>
+</LinearLayout>

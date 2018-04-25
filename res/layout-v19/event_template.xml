@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res/sy.UProject.talat"
+                android:id="@+id/ET_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blue7">
+
+    <ImageView
+        android:id="@+id/ET_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/a330"
+        android:background="@color/blue8"
+        android:scaleType="centerCrop"/>
+    <!--
+            android:paddingBottom="-25dp"
+            android:layout_marginBottom="-25dp"
+        -->
+    <View
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ET_cover"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:fitsSystemWindows="true">
+
+        <ScrollView
+            android:id="@+id/ET_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ET_temp_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/a290"
+                    android:layout_marginTop="-25dp"
+                    android:visibility="invisible"/>
+
+                <View
+                    android:layout_below="@+id/ET_temp_cover"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ahundred"/>
+
+                <ImageView
+                    android:id="@+id/ET_profile"
+                    android:layout_marginTop="-75dp"
+                    android:layout_width="@dimen/ahundred"
+                    android:layout_height="@dimen/ahundred"
+                    android:clickable="true"
+                    android:layout_below="@+id/ET_temp_cover"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/button_transparent_rounded"/>
+
+                <ScrollView
+                    android:id="@+id/ET_dump_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ET_profile"
+                    android:fadingEdge="none"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ET_headline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="30dp"
+                            android:lines="1"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/black8"/>
+
+                        <LinearLayout
+                            android:id="@+id/ET_addons_before"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ET_featured"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/black4"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="@dimen/fiftycent"
+                                    android:layout_height="@dimen/fiftycent"
+                                    android:layout_marginRight="6dp"
+                                    android:src="@drawable/ic_user_template"/>
+
+                                <ImageView
+                                    android:layout_width="@dimen/fiftycent"
+                                    android:layout_height="@dimen/fiftycent"
+                                    android:layout_marginRight="6dp"
+                                    android:src="@drawable/ic_user_template"/>
+
+                                <ImageView
+                                    android:layout_width="@dimen/fiftycent"
+                                    android:layout_height="@dimen/fiftycent"
+                                    android:layout_marginRight="6dp"
+                                    android:src="@drawable/ic_user_template"/>
+
+                                <ImageView
+                                    android:layout_width="@dimen/fiftycent"
+                                    android:layout_height="@dimen/fiftycent"
+                                    android:layout_marginRight="6dp"
+                                    android:src="@drawable/ic_user_template"/>
+
+                                <ImageView
+                                    android:layout_width="@dimen/fiftycent"
+                                    android:layout_height="@dimen/fiftycent"
+                                    android:layout_marginRight="6dp"
+                                    android:src="@drawable/ic_user_template"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/ET_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_black_blue"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:clickable="true"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@drawable/text_blue_black"
+                            android:typeface="monospace"/>
+
+                        <TextView
+                            android:id="@+id/ET_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black3"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black6"/>
+
+                        <LinearLayout
+                            android:id="@+id/ET_addons_after"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ET_hangging_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_white_blue"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:clickable="true"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@drawable/text_blue_black"
+                                android:typeface="monospace"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ET_loader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ET_hang"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/blue7"
+                    android:src="@drawable/imagebutton_hang"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter"
+                    android:textColor="@color/black1"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ET_share"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@color/blue7"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/imagebutton_share"
+                android:textColor="@color/black1"
+                android:contentDescription="@string/share"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationContentDescription="@string/back"
+        android:paddingTop="25dp"
+        android:background="#28000000"
+        app:navigationIcon="@drawable/ic_drawer"
+        app:title="@string/app_name"/>
+
+    <ImageView
+        android:id="@+id/ET_dump_profile"
+        android:layout_width="@dimen/ahundred"
+        android:layout_height="@dimen/ahundred"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_transparent"
+        android:fitsSystemWindows="true"/>
+
+    <ImageView
+        android:id="@+id/ET_toolbar_profile"
+        android:layout_width="@dimen/fiftycent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/button_transparent"
+        android:src="@drawable/ic_user_template"
+        android:visibility="gone"
+        android:layout_marginTop="25dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ET_menu_back"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/ET_more_options"
+        android:layout_width="@dimen/fiftycent"
+        android:layout_height="@dimen/fiftycent"
+        android:src="@drawable/ic_action_more_white"
+        android:scaleType="fitXY"
+        android:background="@drawable/button_transparent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ET_more_options">
+
+        <LinearLayout
+            android:id="@+id/ET_more_options_con"
+            android:layout_width="@dimen/fiftycent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/all_edges"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="@dimen/fiftycent"
+                android:layout_height="@dimen/fiftycent"
+                android:background="@drawable/ic_action_picture"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black3"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"/>
+
+            <Button
+                android:layout_width="@dimen/fiftycent"
+                android:layout_height="@dimen/fiftycent"
+                android:background="@drawable/ic_action_view_as_grid"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black3"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"/>
+
+            <Button
+                android:layout_width="@dimen/fiftycent"
+                android:layout_height="@dimen/fiftycent"
+                android:background="@drawable/ic_action_view_as_grid"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ET_more_options_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/ET_more_options_con"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ET_more_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_edges_border"
+                android:paddingLeft="8dp"
+                android:paddingRight="4dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fiftycent"
+                    android:text="Background"
+                    android:drawablePadding="16dp"
+                    android:textColor="@drawable/text_black_white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/ic_action_picture"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ET_more_feature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_edges_border"
+                android:paddingLeft="8dp"
+                android:paddingRight="4dp"
+                android:layout_marginTop="-1dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fiftycent"
+                    android:text="Feature"
+                    android:textColor="@drawable/text_black_white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/ic_action_view_as_grid"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ET_more_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_edges_border"
+                android:paddingLeft="8dp"
+                android:paddingRight="4dp"
+                android:layout_marginTop="-1dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fiftycent"
+                    android:text="ticket"
+                    android:textColor="@drawable/text_black_white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/ic_action_view_as_grid"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ET_more_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_edges_border"
+                android:paddingLeft="8dp"
+                android:paddingRight="4dp"
+                android:layout_marginTop="-2dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fiftycent"
+                    android:text="Statistics"
+                    android:textColor="@drawable/text_black_white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/ic_action_view_as_grid"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

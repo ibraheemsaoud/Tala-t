@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="what kind of hangout is it?"
+        android:textColor="@color/purple"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/EM_section0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_fancy_dorange"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/concert"
+            android:textColor="@color/black7"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/EM_section1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_fancy_dorange"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/family"
+            android:textColor="@color/black7"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/EM_section2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_fancy_dorange"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/social"
+            android:textColor="@color/black7"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/EM_section3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_fancy_dorange"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/sport"
+            android:textColor="@color/black7"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/EM_section4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_fancy_dorange"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/charity"
+            android:textColor="@color/black7"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/EM_section5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_fancy_dorange"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/education"
+            android:textColor="@color/black7"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/EM_section6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_fancy_dorange"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/religion"
+            android:textColor="@color/black7"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/EM_section7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_fancy_dorange"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/other"
+            android:textColor="@color/black7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

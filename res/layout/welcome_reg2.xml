@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/purple5"
+        android:textSize="18sp"
+        android:text="@string/sections_explain"/>
+
+    <CheckBox
+        android:id="@+id/WR_section0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/blue"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="@string/concert"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/WR_section1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/red"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="@string/family"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/WR_section2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/red"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="@string/social"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/WR_section3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/green"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="@string/sport"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/WR_section4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/orange"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="@string/charity"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/WR_section5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/dblue"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="@string/education"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/WR_section6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/yellow"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="@string/religion"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/WR_section7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/silver"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="@string/other"
+        android:textSize="20sp"/>
+</LinearLayout>

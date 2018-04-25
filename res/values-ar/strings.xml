@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">طلعات</string>
+    <string name="uproject">U|Project</string>
+    <string name="desc">لا تضيع اي مناسبة مجددا</string>
+    <string name="long_desc">أكتشف منطقتك بطريقة جديدة\n و طلاع مع أصدقاءك</string>
+    <string name="guest_mode">جرب أول?</string>
+    <!-- WELCOME -->
+    <string name="login">تسجيل الدخول</string>
+    <string name="register">انشاء حساب</string>
+    <!-- SECTIONS -->
+    <string name="family">عائلي</string>
+    <string name="culture">ثقافي</string>
+    <string name="concert">حفلات</string>
+    <string name="charity">خيري</string>
+    <string name="sport">رياضي</string>
+    <string name="religion">ديني</string>
+    <string name="social">اجتماعي</string>
+    <string name="education">تعليمي</string>
+    <string name="other">غيرها</string>
+    <!-- ERRORS -->
+    <string name="E_internet">لا يوجد اتصال بالانترنت</string>
+    <string name="E_registeration">registration error, please recheck your fields</string>
+    <string name="E_username">3->20 letters, with \'_\'</string>
+    <string name="E_username_exists">username already exists, please try another one</string>
+    <string name="E_username_password">sorry, there is a problem with the username, password</string>
+    <string name="E_password">6->50 charecters, make it hard :)</string>
+    <string name="E_password_confirm">passwords doesn\'t match!</string>
+    <string name="E_email">تأكد مرة اخرى من إيميلك</string>
+    <string name="E_unknown">an unknown problem has occurred, please try again later</string>
+    <!-- MANAGER ERRORS-->
+    <string name="E_headline">كل طلعة بحاجة لعنوان</string>
+    <string name="E_desc">Ops, are we forgetting something?</string>
+    <string name="E_date">every hangout needs a headline</string>
+    <string name="E_time">every hangout needs a headline</string>
+    <!-- USER -->
+    <string name="username">اسم المستخدم</string>
+    <string name="email">الإيميل</string>
+    <string name="phone">التلفون</string>
+    <string name="password">كلمة المرور</string>
+    <string name="password_confirm">تأكيد كلمة المرور</string>
+    <string name="north">middle (Homs, Hama and Aleppo)</string>
+    <string name="west">west (Lattakia, Tartous and Edleb)</string>
+    <string name="east">east (Al Raqua, Deir al Zour and Al Hasakah)</string>
+    <string name="south">south (Damascus and southern provinces)</string>
+    <string name="phone_explain">we will only use your phone number to send you notifications about the important events that you are going to miss, you can change your settings anytime.</string>
+    <string name="sections_explain">choose what sections you want to get events about</string>
+    <string name="region_explain">choose what regions you want to get events about</string>
+    <string name="terms">by clicking send you accept the terms of use and user agrement on the website.</string>
+   	<!-- DrawerLayout -->
+   	<string name="home">الرئيسية</string>
+   	<string name="upcoming">المناسبات القادمة</string>
+   	<string name="hangging">طالع</string>
+   	<string name="search">البحث</string>
+   	<string name="eventManager">مدير المناسبات</string>
+   	<string name="groups">المجموعات</string>
+   	<string name="settings">الخصائص</string>
+    <!-- Event Template -->
+    <string name="hang">طالع</string>
+    <string name="share">مشاركة</string>
+    <!-- CONTENT DESC -->
+    <string name="profileImage">profile</string>
+    <!--  -->
+    <string name="more">المزيد</string>
+    <string name="less">اقل</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

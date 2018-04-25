@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/notification_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:text="unread notifications"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/red"
+        android:visibility="gone"/>
+    <View
+        android:id="@+id/notification_status_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/notification_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/notification_follow_pic"
+            android:layout_width="@dimen/fiftycent"
+            android:layout_height="@dimen/fiftycent"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="4dp"
+            android:clickable="true"
+            android:src="@drawable/ic_user_template"/>
+
+        <TextView
+            android:id="@+id/notification_follow_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="rami_13 followed you"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/silver9"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/notification_followindicator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/silver5"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+</LinearLayout>

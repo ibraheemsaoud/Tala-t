@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/purple5"
+        android:textSize="18sp"
+        android:text="@string/region_explain" />
+
+    <CheckBox
+        android:id="@+id/WR_region0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:buttonTint="@color/dorange"
+        android:paddingTop="3dp"
+        android:text="@string/south"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/WR_region1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:buttonTint="@color/dorange"
+        android:paddingTop="3dp"
+        android:text="@string/west"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/WR_region2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/dorange"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="@string/north"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/WR_region3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:buttonTint="@color/dorange"
+        android:paddingTop="3dp"
+        android:text="@string/east"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

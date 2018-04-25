@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="ticket price"
+        android:textColor="@color/purple"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/EM_ticket_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Ticket price"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/EM_ticket_seats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Seat limitation"
+        android:inputType="number"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/EM_ticket_explain"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ticket_explaination"
+        android:textColor="@color/black"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:textSize="15sp"/>
+
+</LinearLayout>

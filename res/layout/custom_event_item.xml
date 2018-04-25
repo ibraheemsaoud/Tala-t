@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/CE_wrapper"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/CE_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ahundred"
+        android:background="@color/blue"
+        android:maxHeight="175dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/CE_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CE_cover"
+        android:background="@color/black3"
+        android:gravity="center|left"
+        android:minHeight="20dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:maxLines="3"
+        android:text="a breife description to the thing you have here\nprobably multi lined"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blue7"
+        android:typeface="monospace"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/CE_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CE_desc"
+        android:background="@color/blue7"
+        android:gravity="center|left"
+        android:minHeight="20dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:text="HEADLINE"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/silver1"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/CE_date"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_below="@+id/CE_headline"
+        android:background="@color/blue7"
+        android:gravity="center|left"
+        android:minHeight="23dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="8dp"
+        android:text="01/01/2015"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/silver1"/>
+
+    <TextView
+        android:id="@+id/CE_hangging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CE_date"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/CE_headline"
+        android:drawableRight="@drawable/ic_action_hangging_light"
+        android:gravity="center|left"
+        android:paddingRight="8dp"
+        android:text="200"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/silver1"
+        android:typeface="monospace"/>
+
+    <View
+        android:id="@+id/CE_headline_indecator"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/CE_date"
+        android:background="@color/blue8"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/CE_headline_indecator"
+        android:background="@color/black5"/>
+</RelativeLayout>

@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:background="@color/silver1"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/clicks"
+            android:layout_width="match_parent"
+            android:background="@color/black2"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold"
+                android:text="الرئيسية"
+                android:textColor="@color/black2"
+                android:background="@color/black2"
+                android:layout_below="@+id/dubarah"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold"
+                android:text="من القلب   "
+                android:textColor="@color/white"
+                android:background="@color/dorange"
+                android:layout_below="@+id/dubarah"/>
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold"
+                android:text="~"
+                android:textColor="@color/black2"
+                android:background="@color/dorange6"
+                android:layout_below="@+id/dubarah"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold"
+                android:text="الرئيسية"
+                android:textColor="@color/dorange"
+                android:background="@color/black2"
+                android:layout_below="@+id/dubarah"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="@color/black3"
+                android:src="@drawable/ic_action_expand"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="12dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/dubarahlogo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:id="@+id/dubarah"
+                android:gravity="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_transparent"
+                android:layout_margin="8dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="@color/dorange5"
+                android:text="مرحبا أحمد"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/silver2"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/all_edges">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone"
+                        android:background="@drawable/all_edges">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/black5"
+                            android:hint="الاسم"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/black5"
+                            android:hint="البريد الالكتروني"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/black5"
+                            android:hint="رقم الهاتف"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/red4"
+                            android:hint="العنوان"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/red4"
+                            android:inputType="textMultiLine"
+                            android:gravity="top"
+                            android:lines="3"
+                            android:hint="التعليق"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_transparent"
+                                android:textAppearance="@android:style/TextAppearance.Medium"
+                                android:textStyle="bold"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="0dp"
+                                android:textColor="@color/red"
+                                android:layout_gravity="center"
+                                android:text="إلغاء"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_transparent"
+                                android:textAppearance="@android:style/TextAppearance.Medium"
+                                android:textStyle="bold"
+                                android:paddingLeft="0dp"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/dorange5"
+                                android:layout_gravity="center"
+                                android:text="أضف"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dubarahbanner"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/black7"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="هي خدمة من دوبارة لتعطي المعنى الحقيقي للتكافل بين أفراد المجتمع السوري .. وخصوصي اخواتنا يلي بالمخيمات ويلي اوضاعهم صعبة."/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_default"
+                        android:layout_margin="8dp"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/dorange5"
+                        android:layout_gravity="center"
+                        android:text="أضف فرصة جديدة"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/silver2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/all_edges">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingRight="8dp"
+                            android:layout_height="match_parent"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textColor="@color/dorange7"
+                            android:text="السعودية"
+                            android:gravity="bottom"
+                            android:paddingBottom="4dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textColor="@color/material_deep_teal_500"
+                            android:textStyle="bold"
+                            android:layout_gravity="bottom"
+                            android:paddingRight="4dp"
+                            android:text="#114"
+                            android:paddingBottom="4dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textColor="@color/black6"
+                            android:textStyle="bold"
+                            android:layout_gravity="bottom"
+                            android:paddingRight="8dp"
+                            android:text="معاذ"
+                            android:paddingBottom="4dp"/>
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:padding="4dp"
+                            android:src="@drawable/com_facebook_profile_default_icon"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/black7"
+                        android:text="عندي كيس تياب كبير التياب حالتهن جيدة تياب مخلوطة نسواني رجأي وولاد "/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black6"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingRight="8dp"
+                            android:layout_height="match_parent"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textColor="@color/dorange7"
+                            android:text="دمشق العفيف"
+                            android:gravity="bottom"
+                            android:paddingBottom="4dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textColor="@color/material_deep_teal_500"
+                            android:textStyle="bold"
+                            android:layout_gravity="bottom"
+                            android:paddingRight="4dp"
+                            android:text="#113"
+                            android:paddingBottom="4dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textColor="@color/black6"
+                            android:textStyle="bold"
+                            android:layout_gravity="bottom"
+                            android:paddingRight="8dp"
+                            android:text="هاني"
+                            android:paddingBottom="4dp"/>
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:padding="4dp"
+                            android:src="@drawable/com_facebook_profile_default_icon"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/black7"
+                        android:text="عندي ملابس بدي اتبرع فيها و عم حاول جمع من رفقاتي غراض حاكوني ايمت بتقدرو"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:id="@+id/dialog_dimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"/>
+
+    <ScrollView
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:id="@+id/dialog_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_alignParentRight="true"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="4dp"
+                android:src="@drawable/com_facebook_profile_default_icon"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_toLeftOf="@id/pic"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="معاذ"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:textColor="@color/black7"/>
+
+            <TextView
+                android:layout_toLeftOf="@id/pic"
+                android:paddingLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/name"
+                android:text="2014/12/3 @12:00"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/black5"/>
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_below="@id/name"
+                android:layout_toLeftOf="@id/pic"
+                android:paddingTop="4dp"
+                android:paddingRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عندي كيس تياب كبير التياب حالتهن جيدة تياب مخلوطة نسواني رجأي وولاد "
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold"
+                android:textColor="@color/black6"/>
+
+            <LinearLayout
+                android:layout_below="@id/desc"
+                android:paddingTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="4dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textStyle="bold"
+                        android:textColor="@color/black6"
+                        android:gravity="center|left"
+                        android:text="moaz.slamah@hotmail.com"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black5"
+                        android:layout_marginRight="8dp"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_action_email"
+                        android:tint="@color/dorange"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textStyle="bold"
+                        android:textColor="@color/black6"
+                        android:gravity="center|left"
+                        android:text="+963-987-654321"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black5"
+                        android:layout_marginRight="8dp"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_action_call"
+                        android:tint="@color/dorange"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

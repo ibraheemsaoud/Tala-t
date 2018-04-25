@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:paddingTop="4dp"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:id="@+id/manager_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/manager_add"
+        android:layout_width="@dimen/threefives"
+        android:layout_height="@dimen/threefives"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:longClickable="true"
+        android:src="@drawable/imagebutton_add" />
+
+</RelativeLayout>
